@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +10,46 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.seat {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.allowed {
+  border: 1px solid #ccc;
+}
+
+.not-allowed {
+  visibility: hidden;
+}
+
+.booked {
+  background-color: #ccc;
+}
+
+.user-booked {
+  background-color: green;
 }
